@@ -5,7 +5,7 @@ const server = express(); //create an express server
 const PORT_NUMBER = process.env.PORT || 4000
 
 
-server.get('/', (request, respond) => {
+server.get('/test', (request, respond) => {
     console.log(request)
     respond.status(200).send("Connection hit root endpoint")
 });
